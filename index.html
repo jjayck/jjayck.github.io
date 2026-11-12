@@ -3,33 +3,148 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>iPhoneアプリ</title>
+<meta name="color-scheme" content="light dark">
+<title>jjayck のiPhoneアプリ</title>
+<meta name="description" content="個人開発者 jjayck が App Store で配信している iPhone アプリの一覧と、各アプリのサポート・プライバシーポリシー。">
 <style>
-body{font-family:sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.7}
-.app{border:1px solid #ddd;border-radius:12px;padding:16px;margin:16px 0}
-.app h2{margin:0 0 4px;font-size:1.2em}
-.app p{margin:4px 0}
-footer{margin-top:40px;font-size:.85em;color:#666}
+:root{--bg:#fafaf8;--card:#fff;--text:#1d1d1f;--sub:#5c5c62;--line:#e3e3e0;--link:#0a5fc2}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--card:#1e1e21;--text:#ececef;--sub:#a4a4ab;--line:#33333a;--link:#7ab4ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;line-height:1.7;-webkit-text-size-adjust:100%}
+main{max-width:760px;margin:0 auto;padding:40px 16px 24px}
+header h1{font-size:1.6rem;margin:0 0 6px;line-height:1.3}
+header p{margin:0;color:var(--sub)}
+h2{font-size:1rem;color:var(--sub);font-weight:600;margin:36px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+ul.apps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.app{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.app img{flex:none;width:64px;height:64px;border-radius:14px;border:1px solid var(--line)}
+.app div{min-width:0}
+.app h3{margin:0;font-size:1.05rem;line-height:1.4}
+.app .en{font-size:.8rem;font-weight:400;color:var(--sub);margin-left:4px}
+.app p{margin:4px 0 0;font-size:.93rem}
+.app .note{color:var(--sub);font-size:.82rem}
+.links{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:8px !important}
+a{color:var(--link);text-underline-offset:2px}
+footer{max-width:760px;margin:0 auto;padding:16px 16px 48px;color:var(--sub);font-size:.85rem;border-top:1px solid var(--line)}
+footer p{margin:4px 0}
+@media (max-width:480px){.app{gap:12px;padding:12px}.app img{width:52px;height:52px;border-radius:12px}}
 </style>
 </head>
 <body>
-<h1>iPhoneアプリ</h1>
-<p>個人開発のiPhoneアプリです。</p>
+<main>
+<header>
+<h1>jjayck のiPhoneアプリ</h1>
+<p>App Store で配信中の 11 本の一覧です。各アプリのサポートとプライバシーポリシーもこちらから開けます。</p>
+</header>
 
-<div class="app">
-<h2>ききとり帳</h2>
-<p>英語の音声を端末内で字幕にして日本語訳を付け、復習と単語帳で定着させる英語学習アプリ。</p>
-<p><a href="https://apps.apple.com/jp/app/id6818799396">App Store</a> / <a href="app-support/kikitori/support.html">サポート</a> / <a href="app-support/kikitori/privacy.html">プライバシーポリシー</a></p>
+<section>
+<h2>くらし・道具</h2>
+<ul class="apps">
+<li class="app">
+<img src="icons/pittariphoto.png" width="64" height="64" alt="">
+<div>
+<h3>ぴったり写真 <span class="en" lang="en">Pittari Photo</span></h3>
+<p>写真のサイズ・容量・形式を、提出先の条件に合わせて変換します。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6818774616">App Store</a> <a href="https://jjayck.github.io/app-support/pittariphoto/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/pittariphoto/privacy.html">プライバシーポリシー</a></p>
 </div>
-
-<div class="app">
-<h2>はだマッチ</h2>
-<p>肌のセルフチェックと、成分をもとにしたスキンケア提案・肌の記録のアプリ(美容目的であり、医療診断ではありません)。</p>
-<p><a href="https://apps.apple.com/jp/app/id6819034571">App Store</a> / <a href="app-support/hadamatch/support.html">サポート</a> / <a href="app-support/hadamatch/privacy.html">プライバシーポリシー</a></p>
+</li>
+<li class="app">
+<img src="icons/shikiphoto.png" width="64" height="64" alt="">
+<div>
+<h3>みんなの式フォト</h3>
+<p>結婚式でゲストが撮った写真を、受付のQRコードから1つのアルバムに集めます。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6826791551">App Store</a> <a href="https://jjayck.github.io/app-support/shikiphoto/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/shikiphoto/privacy.html">プライバシーポリシー</a></p>
 </div>
+</li>
+<li class="app">
+<img src="icons/fruitguard.png" width="64" height="64" alt="">
+<div>
+<h3>果樹園ナイトガード</h3>
+<p>使っていないiPhoneを畑に置いて、夜の見張り番にする盗難対策カメラです。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6825393887">App Store</a> <a href="https://jjayck.github.io/app-support/fruitguard/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/fruitguard/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+<li class="app">
+<img src="icons/sanpo.png" width="64" height="64" alt="">
+<div>
+<h3>さんぽ名店 <span class="en" lang="en">Sanpo Meiten</span></h3>
+<p>散歩中、近くにある個人店やカフェを知らせます。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6821622195">App Store</a> <a href="https://jjayck.github.io/app-support/sanpo/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/sanpo/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+<li class="app">
+<img src="icons/yasechokin.png" width="64" height="64" alt="">
+<div>
+<h3>やせ貯金</h3>
+<p>間食をがまんした1回を、お金とカロリーの両方で記録して貯めていきます。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6818558190">App Store</a> <a href="https://jjayck.github.io/app-support/yasechokin/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/yasechokin/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+<li class="app">
+<img src="icons/hadamatch.png" width="64" height="64" alt="">
+<div>
+<h3>はだマッチ</h3>
+<p>肌の悩みと化粧品の成分から、スキンケアの相性をチェックします。</p><p class="note">美容目的であり、医療診断ではありません。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6819034571">App Store</a> <a href="https://jjayck.github.io/app-support/hadamatch/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/hadamatch/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+</ul>
+</section>
 
+<section>
+<h2>学習</h2>
+<ul class="apps">
+<li class="app">
+<img src="icons/kikitori.png" width="64" height="64" alt="">
+<div>
+<h3>ききとり帳 <span class="en" lang="en">ListenNote</span></h3>
+<p>聞こえた英語をその場で字幕と日本語訳にして、あとから復習できます。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6818799396">App Store</a> <a href="https://jjayck.github.io/app-support/kikitori/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/kikitori/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+<li class="app">
+<img src="icons/enekan.png" width="64" height="64" alt="">
+<div>
+<h3>エネルギー管理士 熱分野 合格ナビ</h3>
+<p>エネルギー管理士(熱分野)の過去問の論点別問題集と、計算問題の解き方。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6826752834">App Store</a> <a href="https://jjayck.github.io/app-support/enekan/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/enekan/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+</ul>
+</section>
+
+<section>
+<h2>ゲーム</h2>
+<ul class="apps">
+<li class="app">
+<img src="icons/enpitsu.png" width="64" height="64" alt="">
+<div>
+<h3>えんぴつ陣取り <span class="en" lang="en">Pencil Siege</span></h3>
+<p>鉛筆で引いた線で相手の陣を突く、1台で遊べる対戦ゲーム。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6822095384">App Store</a> <a href="https://jjayck.github.io/app-support/enpitsu/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/enpitsu/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+<li class="app">
+<img src="icons/mochamame.png" width="64" height="64" alt="">
+<div>
+<h3>モカとまめブロウル</h3>
+<p>くまのモカとパンダのまめが戦う、ゆるい対戦アクション。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6823186588">App Store</a> <a href="https://jjayck.github.io/app-support/mochamame/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/mochamame/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+<li class="app">
+<img src="icons/zankyo.png" width="64" height="64" alt="">
+<div>
+<h3>残響召喚 <span class="en" lang="en">Zankyo</span></h3>
+<p>サイコロを振って夜の怪異から生き延びる、文字で読むホラーTRPG。</p>
+<p class="links"><a href="https://apps.apple.com/jp/app/id6821845472">App Store</a> <a href="https://jjayck.github.io/app-support/zankyo/support.html">サポート</a> <a href="https://jjayck.github.io/app-support/zankyo/privacy.html">プライバシーポリシー</a></p>
+</div>
+</li>
+</ul>
+</section>
+</main>
 <footer>
-<p>お問い合わせ: jjayck.apps@gmail.com</p>
+<p>お問い合わせ: <a href="mailto:jjayck.apps@gmail.com">jjayck.apps@gmail.com</a></p>
 <p><a href="tools.html">個人用自動化ツールについて</a></p>
 </footer>
 </body>
